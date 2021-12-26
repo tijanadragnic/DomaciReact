@@ -15,7 +15,7 @@ body {
   .main form,
   .main .details {
     width: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(231, 7, 175);
     margin: 15px;
     padding: 23px;
     text-align: center;
@@ -28,7 +28,7 @@ body {
   }
   
   .main .details > h3 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(180, 135, 156);
     padding-bottom: 15px;
   }
   
@@ -41,7 +41,9 @@ body {
   
   input{
     padding: 15px;
-    margin: 10px
+    margin: 10px;
+    border-color: rgb(180, 135, 156);
+    
   }
   
   
