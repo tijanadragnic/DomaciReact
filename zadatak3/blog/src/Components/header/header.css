@@ -1,0 +1,29 @@
+
+  .header{
+      display:grid;
+     grid-template-columns: 1fr 1fr;
+     
+  }
+ button{
+   padding:10px;
+  font-size: medium;
+  margin-left:50%;
+  margin-top:30px;
+   color: aliceblue;
+    font-family: "Lora", serif;
+    background-color: rgb(144, 33, 148);
+    cursor: pointer;
+    height:50px;
+    width: 100px;
+border-radius:10px 10px 10px 10px;
+  }
+  
+  
+  .headerImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top:10px;
+  
+  }
