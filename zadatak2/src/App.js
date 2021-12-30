@@ -92,7 +92,7 @@ class App extends React.Component {
   }
 
   restartGame = () => {
-    cardImg.map((flower, index) => { return (<Card key={index} flip={this.Flip} backImg={this.state.backImg} flower={flower.img} />) })
+    window.location.reload(false);
   }
 
 
