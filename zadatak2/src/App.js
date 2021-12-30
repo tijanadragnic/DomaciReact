@@ -57,9 +57,9 @@ class App extends React.Component {
 
 
   Flip = (e) => {
-    if (this.state.moves > 0 && this.state.cardsOpened < 3 && this.state.score < 6 && !e.target.src.includes(e.target.alt)) {
+    if (this.state.moves > 0 && this.state.cardsOpened < 3 && this.state.score < 6 && !e.target.src.includes(e.target.dataset.flower)) {
 
-      e.target.src = e.target.alt;
+      e.target.src = e.target.dataset.flower;
       flips++;
 
       if (flips % 2 === 0) {
@@ -68,7 +68,7 @@ class App extends React.Component {
       }
 
       opened.push(e.target);
-      console.log(e.target.alt)
+
 
       if (opened.length === 2 && opened[0].src === opened[1].src) {
         this.setState({ score: this.state.score + 1 });
@@ -92,7 +92,7 @@ class App extends React.Component {
   }
 
   restartGame = () => {
-    window.location.reload(false);
+    cardImg.map((flower, index) => { return (<Card key={index} flip={this.Flip} backImg={this.state.backImg} flower={flower.img} />) })
   }
 
 
