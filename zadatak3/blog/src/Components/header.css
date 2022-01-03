@@ -30,11 +30,10 @@
 
 .headerImg {
   width: 7em;
-  height: 100px;
+  height: 7em;
   border-radius: 50%;
   margin-left: 5%;
   margin-top: 10px;
-  border: 1px solid rgb(144, 33, 148);
 }
 
 .headerLogo {
@@ -48,7 +47,7 @@ button:active {
 @media (max-width: 600px) {
   .headerImg {
     width: 5em;
-    height: 70px;
+    height: 5em;
   }
 
   .headerTitles button {
