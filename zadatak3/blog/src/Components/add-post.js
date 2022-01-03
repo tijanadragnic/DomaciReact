@@ -78,7 +78,6 @@ class AddPost extends React.Component {
                                     className="writeInput"
                                     placeholder="Photo url"
                                     type="text"
-                                    autoFocus={true}
                                     name='image_url'
                                     value={this.state.image_url}
                                     onChange={this.changeHandler}
@@ -87,7 +86,6 @@ class AddPost extends React.Component {
                                     className="writeInput"
                                     placeholder="Author"
                                     type="text"
-                                    autoFocus={true}
                                     name='author'
                                     value={this.state.author}
                                     onChange={this.changeHandler}
@@ -101,7 +99,6 @@ class AddPost extends React.Component {
                                     className=" writeText"
                                     placeholder="Tell your story..."
                                     type="text"
-                                    autoFocus={true}
                                     name='content'
                                     value={this.state.content}
                                     onChange={this.changeHandler}
