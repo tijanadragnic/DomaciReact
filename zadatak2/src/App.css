@@ -63,6 +63,8 @@ button {
 
 button:active {
   transform: scale(0.96);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 @media screen and (max-width: 1212px) {
@@ -106,5 +108,6 @@ button:active {
   }
   body {
     background-position: center;
+    overflow: hidden;
   }
 }
