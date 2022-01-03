@@ -36,4 +36,8 @@ img {
     width: 4.5em;
     height: 4.5em;
   }
+
+  .card:active {
+    transform: none;
+  }
 }
