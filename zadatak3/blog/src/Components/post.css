@@ -1,0 +1,27 @@
+img {
+  width: 100%;
+  height: 30vh;
+}
+.postText {
+  text-align: center;
+  padding: 20px;
+}
+
+.postText p {
+  text-overflow: ellipsis;
+}
+
+.titleLink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 8px black;
+  border: 1px solid black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.titleLink:visited {
+  color: black;
+}

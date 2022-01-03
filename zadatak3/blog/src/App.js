@@ -1,18 +1,28 @@
-import Write from "./pages/write/write";
+import React from 'react';
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import AddPost from './Components/add-post';
+import Homepage from './Components/homepage';
+import Post from './Components/post';
 
-import Homepage from "./pages/homepage/homepage";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Single from "./pages/single/Single";
+class App extends React.Component {
 
-function App() {
-  const currentUser = true;
-  return (
-   
-          <><Homepage /><Write/> <Single/></>
-       
-        
-    
-  );
+
+  render() {
+    return <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Homepage />}></Route>
+          <Route path='/:id' element={<Post />}></Route>
+          <Route path='/add-post' element={<AddPost />}></Route>
+
+        </Routes>
+      </BrowserRouter>
+    </div>;
+  }
 }
 
 export default App;
+
+
+
+

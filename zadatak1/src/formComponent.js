@@ -53,7 +53,7 @@ class FormComponent extends React.Component {
         return;
     }
 
-    handleSubmit(event) {
+    async handleSubmit(event) {
         event.preventDefault();
         let formFields = [
             "userName",
@@ -70,6 +70,16 @@ class FormComponent extends React.Component {
 
         if (isValid) this.setState({ isFormSubmitted: true });
         else this.setState({ isFormSubmitted: false });
+
+        const response = await fetch('https://jsonblob.com/api/jsonBlob/927203771570995200', {
+            method: 'put',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'redirect': 'follow'
+            },
+            body: JSON.stringify(this.state)
+        })
 
         return this.state.isFormSubmitted;
     }
@@ -179,7 +189,7 @@ class FormComponent extends React.Component {
                         <div>Email Address: {this.state.emailAddress}</div>
                     </div>
                 ) : (
-                    <div style={{ textAlign: "center" }}>
+                    <div style={{ textAlign: "center" }} className="formContainer">
                         <form onSubmit={this.handleSubmit} >
                             <input
                                 type="text"

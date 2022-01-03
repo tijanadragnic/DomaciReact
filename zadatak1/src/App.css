@@ -11,14 +11,12 @@ body {
   text-align: center;
 }
 
-.main form,
 .main .details {
-  width: 600px;
+  width: 30%;
   border: 1px solid rgb(231, 7, 175);
-  margin: 15px;
+  margin: 40px auto;
   padding: 23px;
   text-align: center;
-  margin-left: 25%;
 }
 
 .main .details > div {
@@ -31,11 +29,23 @@ body {
   padding-bottom: 15px;
 }
 
+.formContainer {
+  width: 100%;
+}
+
+form {
+  border: 1px solid rgb(231, 7, 175);
+  width: 30%;
+  margin: 30px auto;
+  padding: 23px;
+}
+
 input[type="tel"],
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  width: 300px;
+  width: 90%;
+  margin: 10px auto;
 }
 
 input {

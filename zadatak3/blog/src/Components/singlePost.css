@@ -1,0 +1,40 @@
+.singleImg {
+  width: 100%;
+  height: 50vh;
+  z-index: -1;
+}
+
+.singleImg[alt] {
+  font-weight: bolder;
+}
+
+.imgContainer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.singleContainer {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.loading {
+  text-align: center;
+}
+
+.singlePostText {
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .singleContainer {
+    width: 100%;
+  }
+
+  .singlePostText {
+    width: 80%;
+    margin: auto;
+  }
+}
