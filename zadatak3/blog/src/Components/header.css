@@ -11,7 +11,11 @@
   font-size: medium;
   margin-left: 50%;
   color: aliceblue;
-  background-color: rgb(144, 33, 148);
+  background-image: linear-gradient(
+    to right,
+    rgb(180, 28, 185),
+    rgb(100, 20, 130)
+  );
   cursor: pointer;
   height: 50px;
   width: 45%;
