@@ -33,7 +33,7 @@ img {
 
 @media screen and (max-width: 475px) {
   .card {
-    width: 4em;
-    height: 4em;
+    width: 4.5em;
+    height: 4.5em;
   }
 }
