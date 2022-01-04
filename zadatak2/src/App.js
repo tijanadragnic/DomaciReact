@@ -31,8 +31,6 @@ class App extends React.Component {
       { img: require('./images/flower5.jpg'), index: 0 },
       { img: require('./images/flower6.jpg'), index: 0 },],
 
-
-
     }
 
     this.shuffleArray = this.shuffleArray.bind(this);
@@ -56,8 +54,6 @@ class App extends React.Component {
   componentDidMount() {
     this.shuffleArray(this.state.cardImg);
     this.setState({ shuffled: true });
-    console.log(this.state.cardImg)
-
   }
 
 
@@ -65,30 +61,28 @@ class App extends React.Component {
   Flip = (e) => {
     if (this.state.moves > 0 && this.state.cardsOpened < 3 && this.state.score < 6 && e.target.style.zIndex === '0') {
 
-
-
-
       let cardImg = [...this.state.cardImg];
 
-
       cardImg[parseInt(e.target.dataset.id)].index = -1;
+
       this.setState({ cardImg: cardImg })
+
       flips++;
 
       if (flips % 2 === 0) {
-
         this.setState({ cardsOpened: this.state.cardsOpened + 4 })
       }
 
       opened.push(e.target.previousElementSibling);
 
-
       if (opened.length === 2 && opened[0].src === opened[1].src) {
+
         this.setState({ score: this.state.score + 1 });
         this.setState({ cardsOpened: 0 });
         opened.splice(0, 2);
 
       } else if (opened.length === 2 && opened[0].src !== opened[1].src) {
+
         this.setState({ moves: this.state.moves - 1 });
         setTimeout(() => {
           let firstId = opened[0].nextElementSibling.dataset.id;
