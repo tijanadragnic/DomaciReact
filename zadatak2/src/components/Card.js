@@ -8,7 +8,8 @@ function Card(props) {
     return (
 
         <div className="card" >
-            <img src={props.backImg} alt='Flower' data-flower={props.flower} onClick={props.flip} />
+            <img className='frontSide' src={props.flower} alt='Flower' onClick={props.flip} />
+            <img className='backSide' src={props.backImg} alt='Flower' onClick={props.flip} style={{ zIndex: props.index }} data-id={props.id} />
         </div>
 
     );
