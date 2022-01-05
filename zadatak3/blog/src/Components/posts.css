@@ -12,6 +12,35 @@
   margin-top: 200px;
 }
 
+.errorMessage {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.errorMessage button {
+  padding: 10px;
+  font-size: medium;
+
+  color: aliceblue;
+  background-image: linear-gradient(
+    to right,
+    rgb(180, 28, 185),
+    rgb(100, 20, 130)
+  );
+  cursor: pointer;
+  height: 50px;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0.2em 0.2em 0.2em rgb(101, 24, 104);
+}
+
 @media (max-width: 1100px) {
   .container {
     grid-template-columns: 1fr 1fr;
@@ -21,5 +50,9 @@
   .container {
     grid-template-columns: 1fr;
     font-size: 0.8em;
+  }
+
+  .errorMessage button {
+    width: 50%;
   }
 }
