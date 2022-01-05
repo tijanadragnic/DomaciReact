@@ -15,7 +15,9 @@ img {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 8px black;
+  -moz-box-shadow: 0 0 9px black;
+  -webkit-box-shadow: 0 0 9px black;
+  box-shadow: 0 0 9px black;
   border: 1px solid black;
   overflow: hidden;
   text-overflow: ellipsis;

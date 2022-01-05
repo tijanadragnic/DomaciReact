@@ -28,7 +28,20 @@
   padding-bottom: 50px;
 }
 
-@media (max-width: 800px) {
+.goBack {
+  background: none;
+  border: none;
+  width: 9em;
+  float: left;
+  cursor: pointer;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
   .singleContainer {
     width: 100%;
   }
@@ -36,5 +49,25 @@
   .singlePostText {
     width: 80%;
     margin: auto;
+  }
+
+  .goBack {
+    font-size: 1.5em;
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .singleContainer {
+    width: 100%;
+  }
+
+  .singlePostText {
+    width: 95%;
+    margin: auto;
+  }
+
+  .goBack {
+    font-size: 1.5em;
+    width: 60%;
   }
 }
